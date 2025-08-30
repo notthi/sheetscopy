@@ -41,6 +41,22 @@ def serve(path):
         else:
             return "index.html not found", 404
 
+import json
+from google.oauth2 import service_account
+
+def get_google_credentials():
+    """
+    Renderでは環境変数から、ローカルではファイルから認証情報を取得
+    """
+    try:
+        if os.environ.get("GOOGLE_CREDENTIALS"):
+            creds_dict = json.loads(os.environ["GOOGLE_CREDENTIALS"])
+            return service_account.Credentials.from_service_account_info(creds_dict)
+        else:
+            return service_account.Credentials.from_service_account_file("credentials.json")
+    except Exception as e:
+        raise RuntimeError(f"Google認証情報の取得に失敗しました: {e}")
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
