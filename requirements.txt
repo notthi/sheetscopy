@@ -1,7 +1,7 @@
 # ビルドツール
-setuptools==69.5.1
-wheel==0.43.0
-pip==24.0
+setuptools==68.2.2
+wheel==0.40.0
+pip==23.2.1
 
 # Web Framework
 flask==3.1.2
@@ -10,9 +10,9 @@ gunicorn==21.2.0
 python-dotenv==1.0.0
 
 # Data Processing
-numpy==1.23.5
-scipy==1.9.3  # Python 3.11互換のバージョン
-pandas==1.5.3
+numpy==1.20.3
+scipy==1.6.3
+pandas==1.2.5
 
 # Google API
 google-api-python-client==2.100.0
@@ -21,4 +21,4 @@ google-auth-httplib2==0.1.1
 google-auth-oauthlib==1.0.0
 
 # その他
-requests==2.31.0
+requests==2.26.0
