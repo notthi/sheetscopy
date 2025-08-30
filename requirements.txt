@@ -11,7 +11,7 @@ gunicorn==21.2.0
 python-dotenv==1.0.0
 
 # データ処理
-numpy==1.24.3
+# numpy==1.24.3
 pandas==1.5.3  # バージョンを下げる
 scipy==1.10.1
 
