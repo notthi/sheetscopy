@@ -1,8 +1,7 @@
-# 基本ツール
-pip==23.2.1
-setuptools==69.2.0
+# ビルドツール
+setuptools==69.5.1
 wheel==0.43.0
-cython==3.0.2
+pip==24.0
 
 # Web Framework
 flask==3.1.2
@@ -10,10 +9,10 @@ flask-cors==4.0.0
 gunicorn==21.2.0
 python-dotenv==1.0.0
 
-# データ処理
-# numpy==1.24.3
-pandas==1.5.3  # バージョンを下げる
-scipy==1.10.1
+# Data Processing
+numpy==1.23.5
+scipy==1.9.3  # Python 3.11互換のバージョン
+pandas==1.5.3
 
 # Google API
 google-api-python-client==2.100.0
